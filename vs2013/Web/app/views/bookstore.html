@@ -7,7 +7,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="book in books">
+    <tr ng-repeat="book in books | orderBy:name">
         <th scope="row">{{ book.name }}</th>
         <!--<td>{{ book.name }}</td>-->
     </tr>

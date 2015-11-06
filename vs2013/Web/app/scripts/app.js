@@ -17,6 +17,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .constant('endpoint', 'http://localhost:9000')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

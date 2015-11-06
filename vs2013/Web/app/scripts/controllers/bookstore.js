@@ -8,8 +8,12 @@
  * Controller of the webApp
  */
 angular.module('webApp')
-  .controller('BookStoreCtrl', function ($scope, $http) {
-    $http.get('http://localhost:9000/sales/books').then(function (response) {
+  .controller('BookStoreCtrl', function (endpoint, $scope, $http) {
+    $http.get(endpoint + '/sales/books').then(function (response) {
       $scope.books = response.data;
     });
+
+    //$http.get('/sales/books').then(function (response) {
+    //  $scope.books = response.data;
+    //});
   });
