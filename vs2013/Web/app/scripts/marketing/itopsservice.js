@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc service
- * @name webApp.marketingItOpsService
+ * @name marketing.itOpsService
  * @description
- * # marketingItOpsService
- * Service in the webApp.
+ * # itOpsService
+ * Service in the marketing.
  */
 angular.module('marketing', [])
   .factory('itOpsService', function (endpoint, $http) {
