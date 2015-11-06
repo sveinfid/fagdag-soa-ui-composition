@@ -8,9 +8,9 @@
  * Controller of the webApp
  */
 angular.module('webApp')
-  .controller('BookStoreCtrl', function (marketingItOpsService, $scope) {
+  .controller('BookStoreCtrl', function (itOpsService, $scope) {
 
-    marketingItOpsService.getBooks()
+    itOpsService.getBooks()
       .then(function (response) {
         $scope.books = response.data;
     });

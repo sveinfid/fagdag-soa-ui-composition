@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'marketing'
   ])
   .constant('endpoint', 'http://localhost:9000')
   .config(function ($routeProvider) {
