@@ -13,5 +13,5 @@ angular.module('marketing', [])
       getBooks: function () {
         return $http.get(endpoint + '/sales/books');
       }
-    }
+    };
   });
